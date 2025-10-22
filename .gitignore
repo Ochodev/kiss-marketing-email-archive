@@ -1,0 +1,269 @@
+# KISS Marketing Email Archive - .gitignore
+
+# ============================================
+# SENSITIVE INFORMATION - DO NOT COMMIT
+# ============================================
+
+# Private/confidential emails not ready for archive
+private/
+confidential/
+drafts/
+pending-review/
+
+# Original email exports (keep local only)
+exports/
+*.mbox
+*.eml
+*.msg
+*.pst
+
+# Unprocessed attachments
+raw-attachments/
+unprocessed/
+
+# Personal notes and working files
+*.scratch
+*.wip
+*TEMP*
+*-DRAFT*
+
+# ============================================
+# REDACTED CONTENT
+# ============================================
+
+# Files with sensitive info pending redaction
+*-unredacted.md
+*-sensitive.md
+*-confidential.md
+
+# Client data requiring additional privacy review
+needs-redaction/
+
+# ============================================
+# SYSTEM & EDITOR FILES
+# ============================================
+
+# macOS
+.DS_Store
+.AppleDouble
+.LSOverride
+._*
+
+# Windows
+Thumbs.db
+ehthumbs.db
+Desktop.ini
+$RECYCLE.BIN/
+
+# Linux
+*~
+.directory
+
+# ============================================
+# EDITOR & IDE
+# ============================================
+
+# VS Code
+.vscode/
+*.code-workspace
+
+# JetBrains
+.idea/
+*.iml
+
+# Sublime Text
+*.sublime-project
+*.sublime-workspace
+
+# Vim
+[._]*.s[a-v][a-z]
+[._]*.sw[a-p]
+[._]s[a-rt-v][a-z]
+[._]ss[a-gi-z]
+[._]sw[a-p]
+*.swp
+*.swo
+*~
+
+# Emacs
+*~
+\#*\#
+.\#*
+
+# ============================================
+# PROCESSING & CONVERSION SCRIPTS
+# ============================================
+
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+venv/
+env/
+ENV/
+.venv
+
+# Node.js (if using JS tools)
+node_modules/
+npm-debug.log
+yarn-error.log
+
+# Ruby
+*.gem
+.bundle/
+
+# ============================================
+# BUILD & TEMPORARY FILES
+# ============================================
+
+# Logs
+*.log
+logs/
+*.log.*
+
+# Temporary files
+tmp/
+temp/
+*.tmp
+
+# Backup files
+*.bak
+*.backup
+*~
+
+# Cache
+.cache/
+cache/
+
+# ============================================
+# LARGE FILES & BINARIES
+# ============================================
+
+# Large attachments (use Git LFS instead)
+# Uncomment if not using Git LFS
+# *.pdf
+# *.zip
+# *.tar.gz
+# *.pptx
+# *.docx
+# *.xlsx
+
+# Videos (definitely too large)
+*.mp4
+*.mov
+*.avi
+*.wmv
+
+# Large images
+*.psd
+
+# ============================================
+# DATABASE & DATA FILES
+# ============================================
+
+# SQLite databases (if using for indexing)
+*.sqlite
+*.sqlite3
+*.db
+
+# CSV exports (keep in exports/)
+*.csv
+
+# ============================================
+# TESTING & DEVELOPMENT
+# ============================================
+
+# Test files
+test/
+tests/
+*.test.md
+*-test-*
+
+# Development notes
+DEV-NOTES.md
+TODO-PRIVATE.md
+
+# ============================================
+# ARCHIVE-SPECIFIC
+# ============================================
+
+# Emails pending metadata completion
+incomplete/
+needs-metadata/
+
+# Duplicate detection
+duplicates/
+.dedup-cache
+
+# Quality assurance working files
+qa-review/
+qa-failed/
+
+# Automation scripts outputs
+scripts/output/
+scripts/logs/
+
+# Index generation intermediate files
+.index-generation/
+indices/working/
+
+# ============================================
+# CREDENTIALS & API KEYS
+# ============================================
+
+# Never commit these!
+.env
+.env.local
+.env.*.local
+secrets.yaml
+credentials.json
+api-keys.txt
+*.key
+*.pem
+*.p12
+
+# ============================================
+# COMPRESSION & ARCHIVES
+# ============================================
+
+# Compressed archives (extract before committing)
+*.zip
+*.tar.gz
+*.tar.bz2
+*.7z
+*.rar
+
+# ============================================
+# DOCUMENTATION WORKING FILES
+# ============================================
+
+# Draft documentation
+*-DRAFT.md
+NOTES-*.md
+
+# Generated PDFs (regenerate as needed)
+*.pdf
+
+# ============================================
+# CLIENT-SPECIFIC EXCLUSIONS
+# ============================================
+
+# Add specific client folders that should remain private
+# clients/highly-confidential-client/
+# clients/legal-hold-client/
+
+# ============================================
+# COMPLIANCE & LEGAL
+# ============================================
+
+# Legal review pending
+legal-review/
+attorney-client-privilege/
+
+# ============================================
+# CUSTOM RULES
+# ============================================
+
+# Add your own exclusions below as needed
